@@ -9,7 +9,7 @@ function App() {
          Milena sua inda e inteligente <span className="heart">♥️</span> gitgit
         </p>
         <p className="small">
-          Vocês tem uma amiga muito amorosa, diciplinada, autônoma, ufa né?
+          Vocês kkk tem uma amiga muito amorosa, diciplinada, autônoma, ufa né?
         </p>
         <p>
           <a
