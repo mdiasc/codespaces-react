@@ -1,27 +1,23 @@
-import './App.css';
+
+import "./App.css";
+import Cabecalho from "./componentes/cabeçalho";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-         Milena sua inda e inteligente <span className="heart">♥️</span> gitgit
-        </p>
+      <Cabecalho/>
+
+      
+      <main className="App-centro">
+        <h1> What do you have to know about AWS cloud System</h1>
         <p className="small">
-          Vocês kkk tem uma amiga muito amorosa, diciplinada, autônoma, ufa né?
+          Lurn how to cloud the informations with AWS
         </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      </main>
+      <aside className="App-direito">
+        <h1>Bring your services to AWS</h1>
+
+      </aside>
     </div>
   );
 }
