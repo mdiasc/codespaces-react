@@ -1,12 +1,25 @@
-import './estilo.css'
-import logo from '../../imagens/aws-svgrepo-com.svg';
 
+import styled from 'styled-components';
+import logo from '../../imagens/aws.svg';
+
+const Logotipo = styled.div`
+  display:flex;  
+  align-items: center;
+  gap:20px;
+  img{
+    width: 10vh;
+    align-self: left;
+  }
+  h3{
+
+  }
+`
 function Logo(){
   return(
-    <> 
-    <img src={logo} className="logo" alt="logo" />
-    <h1>Cloud Computing service From AMAZON</h1>
-    </>
+    <Logotipo> 
+      <img src={logo} className="logo" alt="logo" />
+      
+    </Logotipo>
    
   );
 }
