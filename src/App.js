@@ -1,25 +1,25 @@
-
-import "./App.css";
+import styled from 'styled-components';
 import Cabecalho from "./componentes/cabeçalho";
+import Main from './componentes/Main';
+
+const AppCss= styled.div`
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  font-family: 'Amazon Ember', sans-serif;
+`
+
 
 function App() {
   return (
-    <div className="App">
-      <Cabecalho/>
-
-      
-      <main className="App-centro">
-        <h1> What do you have to know about AWS cloud System</h1>
-        <p className="small">
-          Lurn how to cloud the informations with AWS
-        </p>
-      </main>
-      <aside className="App-direito">
-        <h1>Bring your services to AWS</h1>
-
-      </aside>
-    </div>
+    <AppCss>  
+        <Cabecalho/>
+        <Main/>  
+    </AppCss>  
   );
 }
 
 export default App;
+
+      

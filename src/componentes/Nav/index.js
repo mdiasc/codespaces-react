@@ -1,19 +1,21 @@
 import styled from 'styled-components';
 
 const NavEstilo = styled.div`
-padding: 20px;
+    padding: 20px;
     display: flex;
     background-color: #ffc870;
-    min-height: 30vh;
-    align-items: center;
-    font-size: calc(5px + 1vmin);
-    flex-direction: row;
+    height: 90vh;
+    align-items: left;
+    font-size: 20px;
     justify-content: center;
+    width: 30%;
 `
-function nav(){
+function Nav(){
     return(
-        <nav className="App-esquerdo">
+    <NavEstilo>
         <h2>Every support to your business</h2>
-      </nav>
+    </NavEstilo>
     );
 }
+
+export default Nav
