@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-const servicesMenu = ["Disaster Recovery", "Migration", "Baas", "Clients"];
+const servicesMenu = ["EC2", "CloudFront", "ElastiCache", "VPC", "S3"];
 
 const MenuStyle = styled.ul`
   list-style-type: none;

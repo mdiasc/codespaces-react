@@ -1,28 +1,19 @@
 import styled from "styled-components"
+import PesquisaServico from "./PesquisaServiços"
 
 const MainCentro = styled.div`
-
-width: 80vw;
-align-items: center;
-flex-direction: column;
-
-
-
+  width: 80vw;
+  align-items: center;
+  
 `
 
 function Main(){
     return(
       
-  <MainCentro>
-      <h1>
-          What do you have to know about AWS cloud System
-      </h1>
-        <p>
-          Lurn how to cloud the informations with AWS
-        </p>
-  </MainCentro>
+    <MainCentro>
+    <PesquisaServico />
+    </MainCentro>
    
     )
 }
-
 export default Main

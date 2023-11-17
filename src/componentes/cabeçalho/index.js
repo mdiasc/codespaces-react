@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Logo from "./Logo";
 import Menu from "./Menu";
 import Search from "./Search";
+import Login from './Login';
 
 const HeadCabecalho = styled.div`
     background-color: #313c52;
@@ -23,6 +24,7 @@ function Cabecalho() {
       <Logo />
       <Menu />
       <Search /> 
+      <Login />
     </HeadCabecalho>
   );
 }
