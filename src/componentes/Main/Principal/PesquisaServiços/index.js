@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { servicos } from "./dados";
 import { useState } from "react";
+import CardServico from "./CardServicos";
 
 
 const PesquisaServicoStyled = styled.section`
@@ -17,27 +18,18 @@ color: #313c52;
  const Input = styled.input`
 
 `
-const CardServico = styled.div`
-    display: flex;
-    height: 35%;
-    width:70%;
-    border-radius: 10px;
-    background-color: #fc9c04;
+const Título = styled.h1`
 
-    img{
-        height: 80%;
-        margin-left: 2%;
-        width: 50%;
-    }
+color: ${props => props.corFonte || 'blue'};
+
+
 `
-
-
 
 function PesquisaServico(){
     const[servicosEncontrados, setServicosEncontrados] =useState([])
     return(
         <PesquisaServicoStyled>
-            <h1>Pesquise serviços disponíveis</h1>
+            <Título corFonte = 'black'>Pesquise serviços disponíveis/</Título>
             <Input
                onChange={ 
                  evento =>{
@@ -49,15 +41,16 @@ function PesquisaServico(){
                />
             {
                 servicosEncontrados.map(servico => (
-                    <CardServico>
-                        <img src={servico.imagemCartao} alt=""/>
-                        <div>
-                            <h2>{servico.título}</h2>
-                            <h3>{servico.oqueFaz}</h3>
-                            <h3>{servico.userGuide}</h3>
-                            <h3>{servico.bestPractices}</h3>
-                        </div>
-                    </CardServico>
+                    <CardServico
+                       título={servicos.título}
+                       oqueFaz={servicos.oqueFaz}
+                       userGuide={servicos.userGuide}
+                       bestPractices={servicos.bestPractices}
+                       imagemCartao={servicos.imagemCartao}
+                    
+                    
+                    
+                    />
                 ))
             }
         </PesquisaServicoStyled>

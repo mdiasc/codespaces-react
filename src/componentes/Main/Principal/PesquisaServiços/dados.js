@@ -1,7 +1,7 @@
-import imagem_rds from'../../../imagens/RDS.svg'
-import imagem_lambda from '../../../imagens/lambda.svg'
-import imagem_iam from'../../../imagens/IAM.svg'
-import imagem_cloudfront from'../../../imagens/cloudfront.svg'
+import imagem_rds from '../../../../imagens/RDS.svg'
+import imagem_lambda from '../../../../imagens/lambda.svg'
+import imagem_iam from '../../../../imagens/IAM.svg'
+import imagem_cloudfront from'../../../../imagens/cloudfront.svg'
 
 export const servicos = [
     { 

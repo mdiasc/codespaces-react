@@ -1,9 +1,11 @@
 import styled from "styled-components"
-import PesquisaServico from "./PesquisaServiços"
-
+import PesquisaServico from "./Principal/PesquisaServiços"
+import CarrosselBootStrap from "./Principal/Carrossel"
+import Principal from 
 const MainCentro = styled.div`
-  width: 80vw;
+  width: 70vw;
   align-items: center;
+  background-color: yellow;
   
 `
 
@@ -11,7 +13,9 @@ function Main(){
     return(
       
     <MainCentro>
-    <PesquisaServico />
+      <Principal/>
+      <CarrosselBootStrap/>
+      <PesquisaServico />
     </MainCentro>
    
     )
