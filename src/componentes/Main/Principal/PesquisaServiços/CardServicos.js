@@ -1,9 +1,9 @@
 import styled from "styled-components"
-import { servicos } from "../dados";
 
 const CardServicoStyled = styled.div`
     display: flex;
-    height: 35%;
+    justify-content: center;
+    height: 35vh;
     width:70%;
     border-radius: 10px;
     background-color: #fc9c04;
@@ -11,20 +11,36 @@ const CardServicoStyled = styled.div`
     img{
         height: 80%;
         margin-left: 2%;
-        width: 50%;
+        width: 30%;
     }
+
+    h2{
+        font-family: poppins;
+        font-size: 50px;
+        color: #234f75;
+    }
+
+    h3{
+        font-family: arial;
+        font-size: 85%;
+        color: black;
+    }
+
+
+
 `
+
 
 
 function CardServico({imagemCartao, título, oqueFaz, userGuide, bestPractices}){
     return(
                      <CardServicoStyled>
-                        <img src={servicos.imagemCartao} alt=""/>
+                        <img src={imagemCartao} alt=""/>
                         <div>
-                            <h2>{servicos.título}</h2>
-                            <h3>{servicos.oqueFaz}</h3>
-                            <h3>{servicos.userGuide}</h3>
-                            <h3>{servicos.bestPractices}</h3>
+                            <h2>{título}</h2>
+                            <h3>{oqueFaz}</h3>
+                            <h3>{userGuide}</h3>
+                            <h3>{bestPractices}</h3>
                         </div>
                     </CardServicoStyled>
     )

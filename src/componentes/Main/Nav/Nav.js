@@ -3,12 +3,12 @@ import styled from 'styled-components';
 const NavEstilo = styled.div`
     padding: 20px;
     display: flex;
-    background-color: #ffc870;
-    height: 90vh;
-    align-items: left;
+    background-color: #313c52;
+    min-height: 90vh;
     font-size: 20px;
     justify-content: center;
     width: 30%;
+    color: white;
 `
 function Nav(){
     return(

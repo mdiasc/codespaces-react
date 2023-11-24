@@ -1,14 +1,14 @@
 import { Carousel } from "react-bootstrap";
 import styled from "styled-components";
-import imagem_1 from '../../../../imagens/arquive.png';
-import imagem_2 from"../../../../imagens/cloudguide.png";
-import imagem_3 from"../../../../imagens/foguete.png";
-import imagem_4 from"../../../../imagens/protecao.png";
+import imagem_1 from '../../../imagens/arquive.png';
+import imagem_2 from"../../../imagens/cloudguide.png";
+import imagem_3 from"../../../imagens/foguete.png";
+import imagem_4 from"../../../imagens/protecao.png";
 
 const CarrosselStyled =  styled(Carousel)`
   overflow: hidden;
-  height: 500px;
-  width: 700px;
+  height: 40%;
+  width: 100%;
   align-items: center;
   img{
     object-fit: cover;
