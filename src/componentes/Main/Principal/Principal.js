@@ -8,7 +8,7 @@ const PrincipalMain = styled.div`
     width: 70%;
     min-height: 90vh;
     align-items: center;
-    background-color: beige;
+    background-color: white;
     color: white;
 `  
 
